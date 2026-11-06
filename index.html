@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Burger Joint</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    
+
+    <header>
+
+        <div class="logo">
+            THE <span>BURGER</span> JOINT.
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-button" onclick="toggleCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+
+    </header>
+
+
+    
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tagline">FRESH. JUICY. UNFORGETTABLE.</p>
+
+            <h1>
+                GOOD FOOD.<br>
+                <span>GREAT MOOD.</span>
+            </h1>
+
+            <p>
+                From perfectly smashed beef burgers to
+                crispy Nashville chicken and irresistible desserts.
+                Your cravings end here.
+            </p>
+
+            <a href="#menu" class="main-button">
+                EXPLORE OUR MENU
+            </a>
+
+        </div>
+
+    </section>
+
+
+   
+
+    <section class="menu-section" id="menu">
+
+        <div class="section-heading">
+
+            <p>WHAT WE SERVE</p>
+
+            <h2>OUR MENU</h2>
+
+            <span>
+                Made fresh. Served hot. Loved always.
+            </span>
+
+        </div>
+        
+
+        <h3 class="category-title">🍔 BURGERS</h3>
+
+        <div class="menu-container" id="burger-menu"></div>
+
+
+    
+
+        <h3 class="category-title">🍗 CHICKEN & TENDERS</h3>
+
+        <div class="menu-container" id="chicken-menu"></div>
+
+
+        <h3 class="category-title">🍩 SWEET TREATS</h3>
+
+        <div class="menu-container" id="dessert-menu"></div>
+
+    </section>
+
+
+    <section class="about-section" id="about">
+
+        <h2>MORE THAN JUST A BURGER.</h2>
+
+        <p>
+            At The Burger Joint, we believe great food starts
+            with great ingredients. From juicy burgers and
+            crispy chicken to freshly made desserts, every
+            bite is made to satisfy your cravings.
+        </p>
+
+    </section>
+
+
+
+    <section class="contact-section" id="contact">
+
+        <h2>HAVE A CRAVING?</h2>
+
+        <p>We're always ready to serve you something delicious.</p>
+
+        <p>📍 Hyderabad, Pakistan</p>
+
+        <p>📞 0300-1234567</p>
+
+    </section>
+
+
+
+
+    <div class="cart-panel" id="cart-panel">
+
+        <div class="cart-header">
+
+            <h2>Your Cart</h2>
+
+            <button onclick="toggleCart()">✕</button>
+
+        </div>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-footer">
+
+            <h3>
+                Total: Rs. <span id="cart-total">0</span>
+            </h3>
+
+            <button class="checkout-button" onclick="checkout()">
+                PLACE ORDER
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <h2>THE BURGER JOINT.</h2>
+
+        <p>Good food. Great mood.</p>
+
+        <p>© 2026 The Burger Joint. All rights reserved.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
